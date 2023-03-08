@@ -23,4 +23,6 @@ outputs:
 
 runs:
   using: 'node16'
+  pre: 'bin/configure.js'
   main: 'dist/index.js'
+  
