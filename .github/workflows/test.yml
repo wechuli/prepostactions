@@ -12,4 +12,5 @@ jobs:
     steps:
       - uses: wechuli/prepostactions@main
       - run: node --version
+      - uses: wechuli/github-action-deps-versions-checker@master
  
