@@ -1,0 +1,26 @@
+name: 'Action utilities'
+description: 'GitHub Action to provide utilities for debugging various GitHub Actions'
+branding:
+  icon: 'info'
+  color: 'blue'
+inputs:
+  token:
+    description: 'token to be used for making authenticated calls to the GitHub API'
+    required: false
+    default: ${{ github.token }}
+  tasks:
+    description: 'task(s) that you want to perform'
+    required: true
+    default: "context"
+  create-artifact:
+    description: 'whether to create an artifact with the debug information'
+    required: false
+    default: false
+
+outputs:
+  random-output:
+    description: 'Some random output'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
