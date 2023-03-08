@@ -38769,6 +38769,7 @@ async function run() {
     for (const task of tasks) {
       let value = await alltasks[task]();
       allTaskData[task] = value;
+      
       // print the values in the steps
       console.log(
         `.....................${task.toUpperCase()}.....................`
