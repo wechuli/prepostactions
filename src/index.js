@@ -4,6 +4,7 @@ const fs = require("fs");
 const alltasks = require("./tasks/main");
 const { parseTaskInput, determineCreateArtifact } = require("./utils/utils");
 
+
 async function run() {
   try {
     const tasks = parseTaskInput();
