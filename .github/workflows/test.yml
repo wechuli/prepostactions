@@ -10,6 +10,7 @@ jobs:
       id-token: write
     runs-on: ubuntu-latest
     steps:
+      - run: echo "hello"
       - uses: wechuli/prepostactions@main
       - run: node --version
       - uses: wechuli/github-action-deps-versions-checker@master
